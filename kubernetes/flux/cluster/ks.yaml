@@ -80,7 +80,7 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: extras-claude-code-claude-code
+  name: extras-claude-code
   namespace: flux-system
 spec:
   decryption:
