@@ -80,7 +80,7 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: extras-claudecode-claude-code
+  name: extras-claude-code
   namespace: flux-system
 spec:
   decryption:
@@ -104,7 +104,7 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: extras-default-trello-notifier
+  name: extras-trello-notifier
   namespace: flux-system
 spec:
   decryption:
