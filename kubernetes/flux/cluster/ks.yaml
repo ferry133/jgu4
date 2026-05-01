@@ -76,18 +76,18 @@ spec:
         group: kustomize.toolkit.fluxcd.io
         kind: Kustomization
 ---
-# ── extras/claude-code/claude-code ─────────────────────────────────────────────────────────
+# ── extras/claudecode/claude-code ─────────────────────────────────────────────────────────
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: extras-claude-code
+  name: extras-claudecode-claude-code
   namespace: flux-system
 spec:
   decryption:
     provider: sops
   deletionPolicy: WaitForTermination
   interval: 1h
-  path: ./kubernetes/apps/extras/claude-code/claude-code
+  path: ./kubernetes/apps/extras/claudecode/claude-code
   prune: true
   sourceRef:
     kind: GitRepository
